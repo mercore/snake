@@ -72,6 +72,14 @@ p.info {
   display: none;
 }
 
+@media screen and (max-width: 1023px) {
+  .canvas {
+    border: 5px solid #7e922e;
+    max-width: 90%;
+    max-height: 45%;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .mobile-controls {
     display: none;
