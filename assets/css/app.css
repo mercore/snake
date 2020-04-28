@@ -1,0 +1,79 @@
+body, html {
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gainsboro;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+p {
+  text-transform: uppercase;
+  font-family: 'Arial';
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+p.speed {
+  margin-bottom: 20px;
+}
+
+p.speed span {
+  background-color: #b0cb49;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+p.speed span.active {
+  background-color: #7e922e;
+}
+
+p.info {
+  margin: 0 0 5px 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.canvas {
+  border: 10px solid #7e922e;
+  margin-bottom: 15px;
+}
+
+.mobile-controls span {
+  display: block;
+  text-align: center;
+}
+
+.mobile-controls .center {
+  display: flex;
+  margin: 10px 0;
+}
+
+.mobile-controls img {
+  max-width: 15%;
+}
+
+.mobile-controls .center img {
+  max-width: 30%;
+}
+
+.apple,
+.snake-left, .snake-right, .snake-up, .snake-down, .snake-body {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile-controls {
+    display: none;
+  }
+}
